@@ -10,12 +10,18 @@
     <h1>Si on commence par le dépot local</h1>
     <p>
     <ul>
-        <li>se placer sur le dossier <br>
+        <li>Se placer sur le dossier <br>
             cd Documents/WCSquests/GitGithub2-GitEnLocal/hello-world</li>
         <li>Initialiser le dossier en local<br>
             git init</li>
         <li>Lier le dépôt local avec le dépôt distant<br>
             git remote add origin git@github.com:Tadkozh/my-super-website.git</li>
+        <li>Savoir sur quelle branche on est<br>
+            git branch --show-current</li>
+        <li>Renommer la branche locale master en main<br>
+            git branch -m main</li>
+        <li>Pour le premmier push vers le repo distant, il faut accorderles deux branches main, la locale et la distante<br>
+            git push --set-upstream origin main</li>
     </ul>
     </p>
 
@@ -40,13 +46,12 @@
     <h1>Faire un commit</h1>
     <p>
     <ul>
-        <li>"git status : savoir où on en est dans nos modifs</li>
-        <li>"git add <i>qqchose</i> : placer la modif en "stage"</li>
-        <li>"git -m "truc" : faire un commit avec son message</li>
+        <li>git branch --show-current : savoir sur quelle branche on est</li>
+        <li>git status : savoir où on en est dans nos modifs</li>
+        <li>git add <i>qqchose</i> : placer la modif en "stage"</li>
+        <li>git -m "truc" : faire un commit avec son message</li>
     </ul>
     </p>
-    
 
-    
 </body>
 </html>
