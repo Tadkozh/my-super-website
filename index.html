@@ -7,20 +7,25 @@
     <title>Quelques commandes Git</title>
 </head>
 <body>
+    <p>code .	permet d'ouvrir VSCode depuis le terminal, dans le répertoire où on se trouve.</p>
     <h1>Si on commence par le dépot local</h1>
     <p>
     <ul>
         <li>Se placer sur le dossier <br>
             cd Documents/WCSquests/GitGithub2-GitEnLocal/hello-world</li>
+        <li>configurer Git pour qu'il génère une branche main par défaut<br>  
+            git config --global init.defaultBranch main</li>
         <li>Initialiser le dossier en local<br>
             git init</li>
         <li>Lier le dépôt local avec le dépôt distant<br>
             git remote add origin git@github.com:Tadkozh/my-super-website.git</li>
+        <li>git add <i>qqchose</i> : placer la modif en "stage"</li>
+        <li>git -m "truc" : faire un commit avec son message</li>
         <li>Savoir sur quelle branche on est<br>
             git branch --show-current</li>
-        <li>Renommer la branche locale master en main<br>
+        <li>Changer le nom de la branche master ou on se trouve en main<br>
             git branch -m main</li>
-        <li>Pour le premmier push vers le repo distant, il faut accorderles deux branches main, la locale et la distante<br>
+        <li>Pour le premmier push vers le repo distant, il faut accorder les deux branches main, la locale et la distante<br>
             git push --set-upstream origin main</li>
     </ul>
     </p>
@@ -50,6 +55,7 @@
         <li>git status : savoir où on en est dans nos modifs</li>
         <li>git add <i>qqchose</i> : placer la modif en "stage"</li>
         <li>git -m "truc" : faire un commit avec son message</li>
+        <li>git log : obtenir un historique du projet</li>
     </ul>
     </p>
 
