@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quelques commandes Git</title>
 </head>
 <body>
+    <h1>Si on commence par le dépot local</h1>
+    <p>
+    <ul>
+        <li>se placer sur le dossier <br>
+            cd Documents/WCSquests/GitGithub2-GitEnLocal/hello-world</li>
+        <li>Initialiser le dossier en local<br>
+            git init</li>
+        <li>Lier le dépôt local avec le dépôt distant<br>
+            git remote add origin git@github.com:Tadkozh/my-super-website.git</li>
+    </ul>
+    </p>
+
+    <h1>Si on commence par le dépot distant</h1>
+    <p>
+    <ul>
+        <li>Importer un projet à partir d'un dépôt distant (si on prend un projet en cours de route)<br>
+            git clone git@github.com:Tadkozh/my-super-website.git</li>
+    </ul>
+    </p>
+
+    <h1>Echanges entre les deux dépôts</h1>
+    <p>
+    <ul>
+        <li>"pousser" le code local vers le repo distant<br>
+            git push origin main</li>
+        <li>"récupérer" en local la dernière version du code distant<br>
+            git pull origin main</li>
+    </ul>
+    </p>
+
+    <h1>Faire un commit</h1>
+    <p>
+    <ul>
+        <li>"git status : savoir où on en est dans nos modifs</li>
+        <li>"git add <i>qqchose</i> : placer la modif en "stage"</li>
+        <li>"git -m : faire un commit avec son message</li>
+    </ul>
+    </p>
+    
+
     
 </body>
 </html>
